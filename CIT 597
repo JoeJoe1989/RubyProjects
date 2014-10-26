@@ -1,0 +1,178 @@
+# Array
+a = ['H', 1, 2, 3]
+a.class
+a[-2]
+a[1, 3]
+
+# Ranges
+my_range()=(1..10)
+(1..100).to_a # convert to array
+
+# Hash
+my_hash = {
+	"cello" => "string",
+	"flute" => "wind"
+}
+
+my_hash["ob"] = "wind"
+
+# condition
+
+
+# while for loop  
+
+http://rubylearning.com/satishtalim/simple_constructs.html
+year = 2000  
+leap = case  
+       when year % 400 == 0 then true  
+       when year % 100 == 0 then false  
+       else year % 4   == 0  
+       end  
+puts leap 
+
+
+http://rubylearning.com/satishtalim/ruby_ranges.html
+puts digits.reject {|i| i < 5 }  # [5, 6, 7, 8, 9]  
+
+
+
+
+GEM:
+code(tests, utilities)
+documentation
+gemspec
+
+gem install 
+nano ~/.rvm/gems/
+
+
+
+Functional Ruby
+-map
+-filters(select and reject)
+-reduce
+
+doc.css("table tr td").each do |row|
+  p row.text # row.content
+end
+
+print doc
+
+
+The <li> elements with a data-category of news
+
+select
+
+vocab
+mutiple choice
+debugging: syntax/crash logig
+write ruby code 
+html
+
+Arributes: outside manfesnation 
+- instance variables: internal to class
+- methods: 
+
+# Modules
+- group code toghether
+- cannot create an instance of this or subclasses
+
+# Mixins
+
+# Dynamic
+- relfection
+- meta programming
+
+
+# Monolithic Software
+  Component based SE
+  Micro-kernel
+  client-server
+  service oriented architecture
+ # Saas
+   Access anywhere
+   Push updates
+   Easier to test
+   No setup/ installation
+   CPU constrain
+   No local storage
+
+# Projects
+public safety
+
+# rails
+CRUD: create read update delete
+gem install bundle
+gem rails 3 2 19
+rails generate scaffold --help
+rake db:migrate
+rake routes
+gem 'twitter-bootstrap-rails'
+gem 'less-rails'
+
+
+# Software engineering
+why is it hard?
+1. cannont forsee problems
+2. dependency
+3. integration 
+4. people
+
+software: 
+1.quality 2. cost 3. schedule
+- hard to estimate time
+- developers over/ under-estimate
+- requiremnts are not clearly defined
+- requirements change
+- requirements are not realistic 
+
+Wafterfall/ Plan & Document
+requirement -> design -> implementation -> testing -> deploy/ maintain
+
+User story:
+- lightweight description of how app will be used
+  As a [stakeholder], so that [goal], I wan to do [task]
+  
+Validation (behavior):
+ - am I building the right product?
+Verification (implementation):
+ - am I building the product right?
+
+BDD: Behavior Driven Developement
+- user stories
+	-- SMART:
+		Specific: as a user, I can sort by price descending.  
+		Measurable: as a user, 95% of the page should load in less than 10s
+		Achievable:  
+		Relevant:
+		Timeboxed: 
+- estimate point values (level of difficulty 1,2,3...)
+	-- 1: straightfoward 2: medium 3: complex
+- planning iteration
+- velocity 
+
+
+Lo-Fi UIs: low-didelity UI
+
+
+TDD: Test DD
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
