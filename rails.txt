@@ -1,0 +1,73 @@
+
+bundle install only when you change gem file
+
+rails console
+Album.all
+Album.find(1).price
+
+gem 'annotate'
+group :test, :development do
+  gem 'cucumber-rails', :require => false #
+  gem 'cucumber-rails-training-wheels'
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'launchy' # os agnostic
+end
+
+annotate
+
+annotate --routes
+
+schema: overall picture of the database
+
+BDD: cucumber
+
+rails g cucumber:install capybara
+rails g cucumber_rails_training_wheels:install # create features for this project
+
+in features/: add AddAlbum.feature
+Feature: Album submission
+  As a user 
+  so that I can track my albums
+  I want to add a new album to the list
+
+  Scenarios: Add an album
+     Given I am on the album creation page
+     When I add a new album
+     Then I should see the newly created album  
+
+run: 
+cucumber
+
+in features/steps_definitions add album_steps.rb
+
+Given(/^I'm on the album creation page$/) do
+  visit new_album_path
+end
+
+When(/^I add a new album$/) do
+  fill_in 'Name', :with => "Lullaby"
+  fill_in 'Price', :with => "11.66"
+  click_button 'Create Album'
+end
+
+Then(/^I should see the newly created album$/) do
+  assert page.has_content?("Album was successfully created")
+end
+
+run: 
+rake db:test:prepare
+
+Album successful!
+
+
+
+
+
+
+
+
+
+
+
+
