@@ -60,6 +60,7 @@ rake db:test:prepare
 
 Album successful!!!
 
+how to add a folder? all? add * or add .
 
 
 
