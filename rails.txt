@@ -58,7 +58,7 @@ end
 run: 
 rake db:test:prepare
 
-Album successful!
+Album successful!!!
 
 
 
